@@ -28,7 +28,7 @@
     </div>
     <hr>
     <div class="center">
-        <h3>List of all users</h3>
+        <h3>List of all users:</h3>
         <table class="center-ib">
             <tr>
                 <th>Name</th>
