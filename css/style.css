@@ -1,0 +1,112 @@
+/** style.css made for test-site
+    (c) 2018 Sebastian Safari
+*/
+
+:root {
+    min-height: 100%;
+    background: #41afff;
+}
+body {
+    background: white;
+}
+label {
+    display: inline-block;
+    width:100px;
+    text-align: right
+}
+
+
+.center {
+    display: block;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+}
+.center-ib {
+    display: inline-block;
+    text-align: center;
+}
+.center-50 {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.center form {
+    text-align: left;
+}
+.left-25 {
+    width: 25%;
+    float: left;
+}
+.left-75 {
+    width: 75%;
+    float: left;
+}
+.txt-rt {
+    text-align: right;
+}
+.txt-lft {
+    text-align: left;
+}
+.txt-ctr {
+    text-align: center;
+}
+.ib {
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+#headerbar {
+    width: 100%;
+    background: #41afff;
+    color: white;
+}
+#headerbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+#headerbar li {
+    display: inline;
+    color: white;
+    margin: auto  5px;
+}
+#headerbar li > a {
+    color: white;
+    border: white 1px solid;
+    padding: 5px; 
+}
+
+#logo-name {
+    font-size: 2em;
+    margin: auto;
+}
+#logo-name a {
+    border: none;
+    color: white;
+    padding: 0 50% 0 0;
+}
+
+
+#bottombar {
+    width: 100%;
+    background: #41afff;
+    color: white;
+}
+#bottombar ul {
+    list-style-type: none;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+#bottombar li {
+    display: inline;
+    color: white;
+    margin: auto  5px;
+}
+#bottombar li a {
+    color: white;
+}
+
