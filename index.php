@@ -23,7 +23,7 @@
     ?>
 
     <div class="center">
-        <h1 class="txt-ctr">Test-Site</h1>
+        <h1 class="txt-ctr">Timecard</h1>
         <p>Testing Sample user database connection. Also planning on creating a simple timecard web-app.</p>
     </div>
     <hr>
