@@ -24,7 +24,7 @@
 
     <div class="center">
         <h1 class="txt-ctr">Test-Site</h1>
-        <p>Testing php/mysql connection. Also planning on creating a simple timecard web-app.</p>
+        <p>Testing Sample user database connection. Also planning on creating a simple timecard web-app.</p>
     </div>
     <hr>
     <div class="center">
