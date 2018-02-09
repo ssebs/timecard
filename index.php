@@ -35,12 +35,13 @@
                 <th>User</th>
                 <th>Email</th>
                 <th>Date of Birth</th>
+                <th>Password (uses inner join)</th>
             </tr>
 
         <?php
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
-                    echo "\n<tr>\n<td>" . $row["Name"]. "</td>\n<td>" . $row["User"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n</tr>";
+                    echo "\n<tr>\n<td>" . $row["Name"]. "</td>\n<td>" . $row["User"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n<td>*Passwd goes here*</td></tr>";
                 }
             } else {
                 echo "0 results";
