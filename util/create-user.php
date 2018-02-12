@@ -14,6 +14,10 @@ require "../connect.php";
 $sql = 'INSERT INTO Users VALUES (NULL, "' . $_POST["nm"] . '", "' . $_POST["usr"] . '", "' . $_POST["eml"] . '", "' . $_POST["bdy"] . '");';
 $result = $conn->query($sql);
 
+$sql = 'INSERT INTO Passwds VALUES (NULL, "' . $_POST["usr"] . '", "' . $_POST["pswd"] . '");';
+$result = $conn->query($sql);
+
+
 header('Location: '.'../../');
 
 ?>
