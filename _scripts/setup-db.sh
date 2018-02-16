@@ -8,3 +8,7 @@ mysql -u root -proot -Bse "USE test; INSERT INTO Users VALUES (NULL,'Sebastian',
 mysql -u root -proot -Bse "USE test; INSERT INTO Passwds VALUES (NULL, 'ssebs','myP@ss');"
 mysql -u root -proot -Bse "USE test; SELECT * FROM Users;"
 mysql -u root -proot -Bse "USE test; SELECT * FROM Passwds;"
+
+ip=$(ifconfig | grep "inet addr:192" | cut -d":" -f 2 | xargs | cut -d" " -f 1)
+
+echo "IP: $ip"  
