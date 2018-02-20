@@ -64,14 +64,16 @@ label {
     color: white;
 }
 #headerbar ul {
+    height: 1px;
     list-style-type: none;
-    margin: 0;
-    padding: 10px;
+    /* margin: 0; */
+    padding: 35px;
 }
 #headerbar li {
     display: inline;
     color: white;
-    margin: auto  5px;
+    margin: auto 5px;
+    
 }
 #headerbar li > a {
     color: white;
@@ -81,12 +83,10 @@ label {
 
 #logo-name {
     font-size: 2em;
-    margin: auto;
 }
 #logo-name a {
     border: none;
     color: white;
-    padding: 0 50% 0 0;
 }
 
 

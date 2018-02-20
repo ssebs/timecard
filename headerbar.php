@@ -1,17 +1,25 @@
 <div id="headerbar"> 
     <ul>
-        <li>
+        <li style="float:left">
             <span id="logo-name"><a href="index.php">Test-Site</a></span>
         </li>
-        <li>
+        <?php
+        
+        if(isset($_COOKIE["userLogin"])) {
+            echo '<li style="float:right">Welcome, ' . $_COOKIE["userLogin"] . '</li>';
+            echo '<li style="float:right"><a href="logout.php"><strong>Logout</strong></a></li>';
+        }
+        ?>
+        <li style="float:right">
             <a href="new-user.php">New User</a>
         </li>
-        <li>
+        <li style="float:right">
             <a href="login.php">Login</a>
         </li>
-        <li>
+        <li style="float:right">
             <a href="about.php">About</a>
         </li>
+       
     </ul>      
 </div>
 <div style="clear:both;"></div>

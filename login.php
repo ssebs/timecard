@@ -9,22 +9,12 @@
 <body>
 
     <?php
-    require "connect.php";
     require "headerbar.php";
 
-   
-    // $sql = "SELECT * FROM Users";
-    // $result = $conn->query($sql);
-
-
-
-    // if ($result->num_rows > 0) {
-    //     while($row = $result->fetch_assoc()) {
-    //         echo "\n<tr>\n<td>" . $row["First"]. "</td>\n<td>" . $row["Last"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n</tr>";
-    //     }
-    // } else {
-    //     echo "0 results";
-    // }
+    //// Check for Login cookie here, display it if found..
+    if(isset($_COOKIE["userLogin"])) {
+        echo "<h4 class='center'>" . $_COOKIE["userLogin"] . " is already logged in!</h4>";
+    } 
 
     ?>
     <div class="center">

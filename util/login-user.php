@@ -22,6 +22,9 @@ User logged in:
             {
                 echo "<h3>PASSWORD MATCH</h3>";
                 
+                //86400 = 1 day
+                setcookie("userLogin", $_POST["usr"], time() + (86400 / 6), "/");
+                header("Location: ../");
             }
         
         }
