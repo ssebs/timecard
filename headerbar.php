@@ -6,7 +6,7 @@
         <?php
         
         if(isset($_COOKIE["userLogin"])) {
-            echo '<li style="float:right">Welcome, ' . $_COOKIE["userLogin"] . '</li>';
+            echo '<li style="float:right">Welcome, <em>' . $_COOKIE["userLogin"] . '</em></li>';
             echo '<li style="float:right"><a href="logout.php"><strong>Logout</strong></a></li>';
         }
         ?>

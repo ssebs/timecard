@@ -5,6 +5,6 @@
         header("Location index.php");
     } else {
         echo "<script>alert(Not logged in!);</script>";
-        header("Location: index.php");
+        header("Location: ./");
     }
 ?>
