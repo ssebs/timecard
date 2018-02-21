@@ -23,33 +23,11 @@
     ?>
 
     <div class="center">
-        <h1 class="txt-ctr">Timecard</h1>
-        <p>Testing Sample user database connection. Also planning on creating a simple timecard web-app.</p>
+        <h1 class="txt-ctr">Timecard app</h1>
     </div>
-    <hr>
-    <div class="center">
-        <h3>List of all users:</h3>
-        <table class="center-ib">
-            <tr>
-                <th>Name</th>
-                <th>User</th>
-                <th>Email</th>
-                <th>Date of Birth</th>
-                <th>Password (uses inner join)</th>
-            </tr>
-
-        <?php
-            if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
-                    echo "\n<tr>\n<td>" . $row["Name"]. "</td>\n<td>" . $row["User"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n<td>" . $row["Pass"] . "</td></tr>";
-                }
-            } else {
-                echo "0 results";
-            }
-
-        ?>
-        </table>
-    </div>
+    
+    <iframe src="time.php" width="100%"></iframe>
+    
 
 <?php
 require "bottombar.php";
