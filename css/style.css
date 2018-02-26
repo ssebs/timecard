@@ -82,7 +82,7 @@ label {
 }
 
 #logo-name {
-    font-size: 2em;
+    font-size: 150%;
 }
 #logo-name a {
     border: none;
@@ -116,4 +116,5 @@ iframe {
     border: none;         /* Reset default border */
     height: 100vh;        /* Viewport-relative units */
     width: 100vw;
+    overflow: hidden;
 }

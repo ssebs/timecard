@@ -26,7 +26,7 @@
         <h1 class="txt-ctr">Timecard app</h1>
     </div>
     
-    <iframe src="time.php" width="100%"></iframe>
+    <iframe src="time.php" width="100%" scrolling="no"></iframe>
     
 
 <?php
