@@ -8,29 +8,13 @@
 </head>
 <body>
 
-    <?php
-    require "connect.php";
-    require "headerbar.php";
-   
-   
-    // $sql = "SELECT * FROM Users";
-    // $result = $conn->query($sql);
-
-
-
-    // if ($result->num_rows > 0) {
-    //     while($row = $result->fetch_assoc()) {
-    //         echo "\n<tr>\n<td>" . $row["First"]. "</td>\n<td>" . $row["Last"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n</tr>";
-    //     }
-    // } else {
-    //     echo "0 results";
-    // }
-
-    ?>
+<?php
+require "headerbar.php";
+?>
 
     <div class="center">
-        <h1 class="txt-ctr">Create a new User Account</h1>
-        <form action="util/create-user.php" method="post" onsubmit="return confirm('Are you sure you want to submit this form?');" class="ib">
+        <h3 class="txt-ctr">Create a new User Account</h3>
+        <form action="util/create-user.php" method="post" onsubmit="return confirm('Are you sure you want to create this account?');" class="ib">
             <label>Name:</label> <input type="text" name="nm" required><br/>
             <label>Username:</label> <input type="text" name="usr" required><br/>
             <label>Email:</label> <input type="text" name="eml" required><br/>

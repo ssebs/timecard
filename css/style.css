@@ -77,7 +77,7 @@ label {
 }
 #headerbar li > a {
     color: white;
-    border: white 1px solid;
+    /* border: white 1px solid; */
     padding: 5px; 
 }
 

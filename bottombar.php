@@ -5,7 +5,7 @@
 <br>
     <ul>
         <li>
-            <a href="index.php">Test-Site</a>&nbsp; |
+            <a href="index.php">ssebs Timecard</a>&nbsp; |
         </li>
         <li>
             <a href="https://github.com/ssebs/">Github</a>&nbsp; |

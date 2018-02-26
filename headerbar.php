@@ -1,13 +1,13 @@
 <div id="headerbar"> 
     <ul>
         <li style="float:left">
-            <span id="logo-name"><a href="index.php">Test-Site</a></span>
+            <span id="logo-name"><a href="index.php">ssebs Timecard</a></span>
         </li>
         <?php
         
         if(isset($_COOKIE["userLogin"])) {
-            echo '<li style="float:right">Welcome, <em>' . $_COOKIE["userLogin"] . '</em></li>';
-            echo '<li style="float:right"><a href="logout.php"><strong>Logout</strong></a></li>';
+            // echo '<li style="float:right">Welcome, <em>' . $_COOKIE["userLogin"] . '</em></li>';
+            echo '<li style="float:right"><a href="logout.php"><strong><em>Logout...</em></strong></a></li>';
         }
         ?>
         <li style="float:right">

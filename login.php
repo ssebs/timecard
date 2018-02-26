@@ -13,12 +13,13 @@
 
     //// Check for Login cookie here, display it if found..
     if(isset($_COOKIE["userLogin"])) {
-        echo "<h4 class='center'>" . $_COOKIE["userLogin"] . " is already logged in!</h4>";
+        echo "<h4 class='center'><em>" . $_COOKIE["userLogin"] . "</em> is already logged in!</h4>";
+        echo "<hr>";
     } 
 
     ?>
     <div class="center">
-        <h1 class="txt-ctr">Login</h1>
+        <h3 class="txt-ctr">Login</h3>
         <form action="util/login-user.php" method="post" class="ib">
             <label>Username:</label> <input type="text" name="usr" required><br/>
             <label>Password:</label> <input type="password" name="pswd" required><br/><br/>
