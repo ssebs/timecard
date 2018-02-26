@@ -23,7 +23,38 @@ $result = $conn->query($sql);
 ?>
 
 <div class="center">
-    <h3>List of all users:</h3>
+    <?php
+    if(isset($_COOKIE['userLogin']))  {
+        echo "<h4>Welcome, " . $_COOKIE['userLogin'] . "</h4>";
+        echo "<hr>";
+    } else {
+        echo "<h4>Please login at the top of the page.</h4>"; 
+    }
+    ?>
+    <table class="center-ib">
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </tr>
+
+     <?php
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                echo "\n<tr>\n<td>" . $row["Name"]. "</td>\n<td>" . $row["User"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n<td>" . $row["Pass"] . "</td></tr>";
+            }
+        } else {
+            echo "0 results";
+        }
+
+    ?>
+        
+    </table>
+
+
+    <!-- <h4>User list</h4>
     <table class="center-ib">
         <tr>
             <th>Name</th>
@@ -34,16 +65,16 @@ $result = $conn->query($sql);
         </tr>
 
     <?php
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                echo "\n<tr>\n<td>" . $row["Name"]. "</td>\n<td>" . $row["User"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n<td>" . $row["Pass"] . "</td></tr>";
-            }
-        } else {
-            echo "0 results";
-        }
+        // if ($result->num_rows > 0) {
+        //     while($row = $result->fetch_assoc()) {
+        //         echo "\n<tr>\n<td>" . $row["Name"]. "</td>\n<td>" . $row["User"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n<td>" . $row["Pass"] . "</td></tr>";
+        //     }
+        // } else {
+        //     echo "0 results";
+        // }
 
     ?>
-    </table>
+    </table> -->
 </div>
 
 </body>

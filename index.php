@@ -15,14 +15,14 @@
 
     require "headerbar.php";
     ?>
-
-    <div class="center">
-        <h1 class="txt-ctr">Timecard</h1>
-    </div>
     
-    <iframe src="time.php" width="100%" scrolling="no"></iframe>
-    
-
+    <?php
+    if(isset($_COOKIE['userLogin'])) {
+        echo '<iframe src="time.php" width="100%" scrolling="no"></iframe>';
+    }else {
+        echo "<div class='center'><h4>Please login at the top of the page.</h4></div>"; 
+    }
+    ?>
 <?php
 require "bottombar.php";
 ?>

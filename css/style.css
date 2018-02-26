@@ -26,6 +26,9 @@ label {
     display: inline-block;
     text-align: center;
 }
+.center-ib tr {
+font-size: 85%;
+}
 .center-50 {
     margin: auto;
     width: 50%;
