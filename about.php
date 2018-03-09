@@ -10,28 +10,21 @@
 
     <?php
     require "headerbar.php";
-
-    // require "connect.php";
-   
-   
-    // $sql = "SELECT * FROM Users";
-    // $result = $conn->query($sql);
-
-
-
-    // if ($result->num_rows > 0) {
-    //     while($row = $result->fetch_assoc()) {
-    //         echo "\n<tr>\n<td>" . $row["First"]. "</td>\n<td>" . $row["Last"]. "</td>\n<td>" . $row["Email"]. "</td>\n<td>" . $row["Birthday"]. "</td>\n</tr>";
-    //     }
-    // } else {
-    //     echo "0 results";
-    // }
-
     ?>
 
-    <div class="center">
-        <h1 class="txt-ctr">About</h1>
-        <p>Testing php/mysql connection. Also planning on creating a simple timecard web-app.</p>
+    <div class="center" style="text-align: left">
+        <div class="center" style="text-align: left">
+            <h1 class="txt-ctr">About</h1>
+            <p class="txt-ctr">Very basic php/mysql timecard application.</p>
+            <hr>
+            <h5 class="txt-ctr">Current features include:</h5>
+            <ul style="text-align: left">
+                <li>Users - creation, login, passwords (plaintext)</li>
+                <li>Basic Punching in and out, with charge codes (regular, sick, etc)</li>
+                <li>Reporting*</li>
+            </ul>
+            <p><sup>*reporting functionality is unstable.</sup></p>
+        </div>
     </div>
     <br/>
 

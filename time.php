@@ -7,7 +7,7 @@
 
     <style>
 :root {
-    min-height: 100%;
+    /* min-height: 100%; */
     background: #ffffff;
 }
     </style>
