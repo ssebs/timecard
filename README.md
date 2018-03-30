@@ -2,13 +2,13 @@
 
 Timecard php/mysql application
 
-Features include:
+### Features include:
 
 - Users - creation, login, passwords (plaintext)
 - Basic Punching in and out, with charge codes (regular, sick, etc)
 - Reporting (to come soon)
 
-Prerequisits to install:
+### Prerequisits to install:
 
 - If you're using Vagrant:
     - See this repo: https://github.com/ssebs/timecard-vagrant
@@ -20,7 +20,7 @@ Prerequisits to install:
         - See *_scripts/setup-db.sh* to setup the database
             - Note: credentials are same as in *connect.php*
 
-Usage:
+### Usage:
 
 - Follow prerequisites and make sure SQL connection will be valid.
 - Clone this repo in your web server directory
