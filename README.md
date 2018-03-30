@@ -33,9 +33,9 @@ Usage:
 - You can view how many hours you've worked with the reporting feature\*
 
 
-> \*Reporting feature still to come
+> TODO: \*Reporting feature still to come
 
-> \*Passwords should not be stored in plaintext, planning on fixing that soon.
+> TODO \*Passwords should not be stored in plaintext, planning on fixing that soon. (see https://stackoverflow.com/questions/4795385/how-do-you-use-bcrypt-for-hashing-passwords-in-php)
 
 Screenshot below:
 
